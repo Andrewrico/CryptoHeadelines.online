@@ -75,59 +75,32 @@ export default {
 };
 </script>
 
+
 <style>
-*::-webkit-scrollbar {
-    width: 3px;
-}
-
-*::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px #00837c49;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #00eeff4b;
-}
-
-* {
-    outline: none !important;
-}
-
-a {
-    text-decoration: none !important;
-}
-
-ul {
-    list-style: none !important;
-    margin: 0;
-    padding: 0;
-}
 
 html {
     display: block;
     overflow: hidden;
     overflow-y: scroll;
-    background-color: #0b1717;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMwMDJjMmMiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjAxMTAwMDAwMDAwMDAwMDAwMSIvPjxzdG9wIHN0b3AtY29sb3I9IiMxNDA0MDQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjY1Nzk5OTk5OTk5OTk5OTkiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDcyNjI2IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMwMDJjMmMiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjAxMTAwMDAwMDAwMDAwMDAwMSIvPjxzdG9wIHN0b3AtY29sb3I9IiMxNDA0MDQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjY1Nzk5OTk5OTk5OTk5OTkiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDcyNjI2IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-    background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, rgb(0, 44, 44) 1.1%, rgb(20, 4, 4) 65.8%, rgb(7, 38, 38) 100%);
-    background-image: radial-gradient(ellipse farthest-corner at left top, rgb(0, 44, 44) 1.1%, rgb(20, 4, 4) 65.8%, rgb(7, 38, 38) 100%);
-    background-image: -ms-radial-gradient(left top, ellipse farthest-corner, rgb(0, 44, 44) 1.1%, rgb(20, 4, 4) 65.8%, rgb(7, 38, 38) 100%);
+    background-color: rgba(1, 27, 29, 0.85);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMwMDJjMmMiIHN0b3Atb3BhY2l0eT0iMC44MSIgb2Zmc2V0PSIwLjAxMTAwMDAwMDAwMDAwMDAwMSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDBiMGYiIHN0b3Atb3BhY2l0eT0iMC44OSIgb2Zmc2V0PSIwLjY1Nzk5OTk5OTk5OTk5OTkiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDcyNjI2IiBzdG9wLW9wYWNpdHk9IjAuODQiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMwMDJjMmMiIHN0b3Atb3BhY2l0eT0iMC44MSIgb2Zmc2V0PSIwLjAxMTAwMDAwMDAwMDAwMDAwMSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDBiMGYiIHN0b3Atb3BhY2l0eT0iMC44OSIgb2Zmc2V0PSIwLjY1Nzk5OTk5OTk5OTk5OTkiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDcyNjI2IiBzdG9wLW9wYWNpdHk9IjAuODQiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, rgba(0, 44, 44, 0.81) 1.1%, rgba(0, 11, 15, 0.89) 65.8%, rgba(7, 38, 38, 0.84) 100%);
+    background-image: radial-gradient(ellipse farthest-corner at left top, rgba(0, 44, 44, 0.81) 1.1%, rgba(0, 11, 15, 0.89) 65.8%, rgba(7, 38, 38, 0.84) 100%);
+    background-image: -ms-radial-gradient(left top, ellipse farthest-corner, rgba(0, 44, 44, 0.81) 1.1%, rgba(0, 11, 15, 0.89) 65.8%, rgba(7, 38, 38, 0.84) 100%);
 }
 
 @media \0screen\,screen\9 {
     html {
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff002c2c", endColorstr="#ff072626", GradientType=0);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cf002c2c", endColorstr="#d6072626", GradientType=0);
     }
 }
 
 html,
 body,
 #app {
-
-    display: block;
     padding: 0;
     margin: 0;
-    min-height: 500px;
     color: #FFF;
     font-family: sans-serif;
     font-weight: 100;
@@ -135,28 +108,175 @@ body,
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+/*---------------------------------------------------------
+layout Small
+-------------------------------------------------------- */
+
+/* html {border: 1px solid red;} */
+
+/* #app {border: 1px solid green;} */
+
+/* .app {border: 1px solid red;} */
+
 /*
-.app
+.app sm
 -------------------------------------- */
 .app {
-    display: grid;
-    grid-column-gap: 16px;
-    grid-template-columns: 1fr;
     width: 80%;
-    height: auto;
+    height: 100%;
     margin: auto;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 1fr;
+    grid-template-areas:'h'
+                        'c'
+                        'a'
+                        'n';
+}
+
+#Header {
+    grid-area: h;
+}
+
+#Channels {
+    grid-area: c;
+}
+
+#News {
+    grid-area: n;
+}
+
+#Article {
+    grid-area: a;
+}
+
+#Channels,
+#News,
+#Article {
+    height: 100%;
+    min-height: 200px;
 }
 
 /*
-#Header 
+#Header sm
 -------------------------------------- */
 #Header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    filter: drop-shadow(0 0 10px rgb(1, 140, 145));
 }
 
+/*
+#Channels sm
+-------------------------------------- */
+#Channels {
+    height: 30vh;
+    min-height: 200px;
+    max-height: 33vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 8px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.137);
+    filter: drop-shadow(0 0 10px rgb(1, 140, 145));
+}
+
+/*
+#News sm
+-------------------------------------- */
+#News {
+    height: 30vh;
+    min-height: 200px;
+    max-height: 33vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 8px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.137);
+    filter: drop-shadow(0 0 3px rgb(1, 140, 145));
+}
+
+/*
+#Article sm
+-------------------------------------- */
+#Article {
+    height: auto;
+    min-height: 200px;
+    max-height: 33vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 33vh;
+    padding: 8px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.137);
+    filter: drop-shadow(0 0 3px rgb(1, 140, 145));
+}
+
+#Article>* {
+    margin: 12px 0;
+}
+
+/*---------------------------------------------------------
+layout Large
+-------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    #Header {
+        height: 20vh;
+        min-height: 100px;
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Channels,
+    #News,
+    #Article {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    html,
+    body,
+    #app {
+        max-height: auto;
+    }
+
+    .app {
+        grid-gap: 16px;
+        grid-template-columns: 275px 1fr 275px;
+        grid-template-areas: 'h h h'
+            'c n a';
+    }
+
+    #Channels {
+        min-height: 500px;
+        max-height: 50vh;
+    }
+
+    #News {
+        min-height: 500px;
+        max-height: 100%;
+    }
+
+    #Article {
+        min-height: 500px;
+        max-height: 50vh;
+    }
+}
+
+
+/*---------------------------------------------------------
+styles
+-------------------------------------------------------- */
+
+/*
+#Header 
+-------------------------------------- */
 #Header .title {
     display: flex;
     align-items: center;
@@ -169,7 +289,8 @@ body,
     margin: 0;
     padding: 0;
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 1.6em;
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 #Header span {
@@ -179,8 +300,9 @@ body,
     align-self: center;
     text-indent: 10px;
     border-top: 1px solid#fff;
+    text-shadow: 1px 1px rgb(0, 0, 0);
     letter-spacing: 12px;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 #Header .icons {
@@ -201,46 +323,21 @@ body,
 }
 
 @media screen and (min-width: 768px) {
-    #Header {
-        height: 20vh;
-        min-height: 100px;
-        grid-column: 1 / -1;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     #Header h1 {
-        letter-spacing: 1px;
-        font-size: 3em;
+        letter-spacing: 2px;
+        font-size: 2.6em;
     }
 
     #Header span {
         letter-spacing: 17px;
-        font-size: 0.7em;
+        font-size: 1em;
+        text-indent: 20px;
     }
-}
-
-/*
-#Channels #News #Article
--------------------------------------- */
-#Channels,
-#News,
-#Article {
-    overflow: hidden;
-    overflow-y: scroll;
-    min-height: 500px;
-    height: 80vh;
 }
 
 /*
 #Channels 
 -------------------------------------- */
-#Channels {
-    overflow: hidden;
-    filter: drop-shadow(0 0 10px rgb(1, 140, 145));
-    height: auto;
-}
-
 #Channels ul {
     display: grid;
     grid-template-columns: 1fr;
@@ -256,23 +353,6 @@ body,
 /*
 #News 
 -------------------------------------- */
-#News ul {
-    display: grid;
-    grid-gap: 16px;
-    margin: 16px;
-    grid-template-columns: 1fr;
-}
-
-#News li {
-
-    text-align: center;
-    height: 150px;
-    overflow: hidden;
-    background: rgb(0, 0, 0);
-    border: 0.5px solid rgba(0, 255, 234, 0.575);
-    border-radius: 2px;
-}
-
 #News a {
     text-align: center;
     letter-spacing: 1px;
@@ -281,6 +361,22 @@ body,
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+#News ul {
+    display: grid;
+    grid-gap: 16px;
+    margin: 16px;
+    grid-template-columns: 1fr;
+}
+
+#News li {
+    text-align: center;
+    height: 150px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    border: 0.5px solid rgba(0, 255, 234, 0.575);
+    border-radius: 2px;
 }
 
 @media screen and (min-width: 1268px) {
@@ -299,32 +395,18 @@ body,
 #Article 
 -------------------------------------- */
 #Article {
-    display: grid;
-    grid-gap: 16px;
-    overflow: hidden;
-    font-size: 0.9em;
-    width: 100%;
-    margin: 6px auto;
-    padding: 16px;
-    min-height: 100px;
-    height: auto;
-    max-height: 70vh;
-    overflow: hidden;
-    overflow-y: auto;
     color: rgb(165, 253, 253);
     letter-spacing: 1px;
-    background: rgba(0, 0, 0, 0.137);
-    filter: drop-shadow(0 0 10px rgb(1, 140, 145));
-    border: 1px inset rgba(1, 140, 145, 0.288);
 }
 
 #Article h2 {
     color: #fff;
+    font-size: 1em;
     margin: 0 !important;
-    margin-top: 5px;
 }
 
 #Article span {
+    font-size: 0.9em;
     color: aquamarine;
     font-weight: 900;
 }
@@ -377,18 +459,6 @@ active
     color: rgb(255, 255, 255);
 }
 
-/*
-LARGE
----------------------------------------- */
-@media screen and (min-width: 1028px) {
-    .app {
-        display: grid;
-        grid-template-columns: 275px 1fr 275px;
-        width: 80%;
-        height: 100%;
-        margin: auto;
-    }
-}
-</style>
+ </style>
 
 
