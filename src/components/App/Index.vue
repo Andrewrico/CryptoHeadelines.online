@@ -264,7 +264,8 @@ layout Large
     }
 
     #Article {
-        min-height: 500px;
+        /* min-height: 500px; */
+        height: auto;
         max-height: 50vh;
     }
 }
@@ -405,7 +406,7 @@ styles
     margin: 0 !important;
 }
 
-#Article span {
+#Article p {
     font-size: 0.9em;
     color: aquamarine;
     font-weight: 900;

@@ -3,7 +3,7 @@
   <aside>
     <div v-if="article" id="Article">
 
-      <span>{{moment(article.pubDate).format('llll')}}</span>
+      <p>{{moment(article.pubDate).format('llll')}}</p>
 
       <h2>{{article.title}}</h2>
 
