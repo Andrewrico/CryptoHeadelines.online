@@ -114,9 +114,7 @@ body {
     
     font-family: 'Inconsolata', monospace;
 }
-.app {
- /* min-height:100%; */
-}
+
 html,
 body,
 #app {
@@ -255,8 +253,6 @@ layout Large
 -------------------------------------------------------- */
 @media screen and (min-width: 768px) {
     #Header {
-        /* height: 20vh; */
-        /* min-height: 100px; */
         grid-column: 1 / -1;
         flex-direction: row;
         justify-content: space-between;
@@ -289,9 +285,7 @@ layout Large
     }
 
     #Channels {
-        /* min-height: 500px; */
          height: auto;
-        /* max-height: 50vh; */
     }
 
     #News {
