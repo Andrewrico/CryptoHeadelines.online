@@ -5,9 +5,9 @@
             <h1>
                 CRYPTOHEADLINES
             </h1>
-            <span>
+            <p>
                 by andrewrico.com
-            </span>
+            </p>
         </div>
 
         <div class="icons">

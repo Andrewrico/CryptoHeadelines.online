@@ -79,6 +79,7 @@ export default {
 <style>
 
 html {
+   font-family: 'Inconsolata', monospace;
     display: block;
     overflow: hidden;
     overflow-y: scroll;
@@ -90,6 +91,10 @@ html {
     background-image: -ms-radial-gradient(left top, ellipse farthest-corner, rgba(0, 44, 44, 0.81) 1.1%, rgba(0, 11, 15, 0.89) 65.8%, rgba(7, 38, 38, 0.84) 100%);
 }
 
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
 @media \0screen\,screen\9 {
     html {
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cf002c2c", endColorstr="#d6072626", GradientType=0);
@@ -99,6 +104,7 @@ html {
 html,
 body,
 #app {
+    min-height: 100%;
     padding: 0;
     margin: 0;
     color: #FFF;
@@ -163,6 +169,8 @@ layout Small
 #Header sm
 -------------------------------------- */
 #Header {
+
+    font-family: 'Share Tech Mono', monospace;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,6 +182,7 @@ layout Small
 #Channels sm
 -------------------------------------- */
 #Channels {
+    font-family: 'Space Mono', monospace;
     height: 30vh;
     min-height: 200px;
     max-height: 33vh;
@@ -189,6 +198,7 @@ layout Small
 #News sm
 -------------------------------------- */
 #News {
+        font-family: 'Space Mono', monospace;
     height: 30vh;
     min-height: 200px;
     max-height: 33vh;
@@ -204,7 +214,8 @@ layout Small
 #Article sm
 -------------------------------------- */
 #Article {
-    height: auto;
+    font-family: 'Inconsolata', monospace;
+    height: 300px;
     min-height: 200px;
     max-height: 33vh;
     overflow: hidden;
@@ -294,15 +305,12 @@ styles
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
-#Header span {
-    display: inline;
-    align-self: center;
-    text-align: left;
-    align-self: center;
+#Header p {
+    line-height: 1.6;
     text-indent: 10px;
     border-top: 1px solid#fff;
     text-shadow: 1px 1px rgb(0, 0, 0);
-    letter-spacing: 12px;
+    letter-spacing: 9px;
     font-size: 0.8em;
 }
 
@@ -325,12 +333,13 @@ styles
 
 @media screen and (min-width: 768px) {
     #Header h1 {
-        letter-spacing: 2px;
+        letter-spacing: 5px;
         font-size: 2.6em;
     }
 
-    #Header span {
-        letter-spacing: 17px;
+    #Header p {
+        line-height: 2;
+        letter-spacing: 14px;
         font-size: 1em;
         text-indent: 20px;
     }
