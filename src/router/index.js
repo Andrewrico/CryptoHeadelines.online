@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import App from '@/components/Index'
+import App from '@/components/Index'
 
 Vue.use(Router)
 
