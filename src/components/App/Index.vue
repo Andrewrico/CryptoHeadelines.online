@@ -84,19 +84,31 @@ html {
     display: block;
     overflow: hidden;
     overflow-y: scroll;
-    background-color: #0e242b;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMyMzQ2NTQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjAxOSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjU5NCIvPjxzdG9wIHN0b3AtY29sb3I9IiMxMjQ3NTQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMyMzQ2NTQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjAxOSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjU5NCIvPjxzdG9wIHN0b3AtY29sb3I9IiMxMjQ3NTQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-    background-image: -webkit-radial-gradient(left top, ellipse farthest-corner,rgb(35, 70, 84) 1.9%,rgb(0, 0, 0) 59.4%,rgb(18, 71, 84) 100%);
-    background-image: radial-gradient(ellipse farthest-corner at left top,rgb(35, 70, 84) 1.9%,rgb(0, 0, 0) 59.4%,rgb(18, 71, 84) 100%);
-    background-image: -ms-radial-gradient(left top, ellipse farthest-corner,rgb(35, 70, 84) 1.9%,rgb(0, 0, 0) 59.4%,rgb(18, 71, 84) 100%);
+
+
+    background-color: #042a32;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzA3MzAzNiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDAyMzJkIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    /* Android 2.3- hack (needed for the actual radial gradient) */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzA3MzAzNiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDAyMzJkIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    /* Android 2.3 */
+    background-image: -webkit-repeating-radial-gradient(left bottom, ellipse farthest-corner,rgb(7, 48, 54) 0%,rgb(0, 35, 45) 100%);
+    /* IE10+ */
+    background-image: repeating-radial-gradient(ellipse farthest-corner at left bottom,rgb(7, 48, 54) 0%,rgb(0, 35, 45) 100%);
+    background-image: -ms-repeating-radial-gradient(left bottom, ellipse farthest-corner,rgb(7, 48, 54) 0%,rgb(0, 35, 45) 100%);
 }
  
+/* IE8- CSS hack */
 @media \0screen\,screen\9 {
-    html{
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff234654",endColorstr="#ff124754",GradientType=0);
+    html {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff073036",endColorstr="#ff00232d",GradientType=0);
     }
 }
+
+
+
+
+
 
 body {
     
@@ -166,7 +178,6 @@ layout Small
 
 
 #Channels,
-#News,
 #Article {
     overflow: hidden;
     overflow-y: scroll;
@@ -177,7 +188,16 @@ layout Small
     max-height: 33vh;
      filter: drop-shadow(0 0 10px rgb(1, 140, 145));
 }
-
+#News {
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 8px;
+    margin: 0;
+    height: auto;
+    min-height: 200px;
+    max-height: 63vh;
+     filter: drop-shadow(0 0 10px rgb(1, 140, 145));
+}
 /*
 #Header sm
 -------------------------------------- */
