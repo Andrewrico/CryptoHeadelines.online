@@ -21,7 +21,13 @@
 
                 <i class="fab fa-twitter"></i>
 
-            </a>  
+            </a> 
+
+            <a  v-bind:href="home" target="_blank" rel="noopener">
+
+                <i class="fa fa-globe"></i>
+
+            </a>   
 
         </div>
 
@@ -37,7 +43,8 @@ export default {
     
     data(){
         return {
-githubUrl:'https://github.com/',
+            home:'https://www.andrewrico.com/',
+githubUrl:'https://github.com/Andrewrico',
     twitterUrl:'https://twitter.com/andrewrico86',
         }
     }

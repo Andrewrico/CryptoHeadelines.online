@@ -13,7 +13,8 @@
     "netlify-lambda": "^0.4.0",
     "rss-parser": "^3.4.3",
     "vue": "^2.5.17",
-    "vue-loading-overlay": "^2.2.2"
+    "vue-loading-overlay": "^2.2.2",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.4",
