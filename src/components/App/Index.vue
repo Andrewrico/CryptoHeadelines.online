@@ -79,31 +79,36 @@ export default {
 <style>
 
 html {
+  
    font-family: 'Inconsolata', monospace;
     display: block;
     overflow: hidden;
     overflow-y: scroll;
-    background-color: rgba(1, 27, 29, 0.85);
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMwMDJjMmMiIHN0b3Atb3BhY2l0eT0iMC44MSIgb2Zmc2V0PSIwLjAxMTAwMDAwMDAwMDAwMDAwMSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDBiMGYiIHN0b3Atb3BhY2l0eT0iMC44OSIgb2Zmc2V0PSIwLjY1Nzk5OTk5OTk5OTk5OTkiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDcyNjI2IiBzdG9wLW9wYWNpdHk9IjAuODQiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMwMDJjMmMiIHN0b3Atb3BhY2l0eT0iMC44MSIgb2Zmc2V0PSIwLjAxMTAwMDAwMDAwMDAwMDAwMSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDBiMGYiIHN0b3Atb3BhY2l0eT0iMC44OSIgb2Zmc2V0PSIwLjY1Nzk5OTk5OTk5OTk5OTkiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDcyNjI2IiBzdG9wLW9wYWNpdHk9IjAuODQiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-    background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, rgba(0, 44, 44, 0.81) 1.1%, rgba(0, 11, 15, 0.89) 65.8%, rgba(7, 38, 38, 0.84) 100%);
-    background-image: radial-gradient(ellipse farthest-corner at left top, rgba(0, 44, 44, 0.81) 1.1%, rgba(0, 11, 15, 0.89) 65.8%, rgba(7, 38, 38, 0.84) 100%);
-    background-image: -ms-radial-gradient(left top, ellipse farthest-corner, rgba(0, 44, 44, 0.81) 1.1%, rgba(0, 11, 15, 0.89) 65.8%, rgba(7, 38, 38, 0.84) 100%);
+    background-color: #0e242b;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMyMzQ2NTQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjAxOSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjU5NCIvPjxzdG9wIHN0b3AtY29sb3I9IiMxMjQ3NTQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiMyMzQ2NTQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjAxOSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjU5NCIvPjxzdG9wIHN0b3AtY29sb3I9IiMxMjQ3NTQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    background-image: -webkit-radial-gradient(left top, ellipse farthest-corner,rgb(35, 70, 84) 1.9%,rgb(0, 0, 0) 59.4%,rgb(18, 71, 84) 100%);
+    background-image: radial-gradient(ellipse farthest-corner at left top,rgb(35, 70, 84) 1.9%,rgb(0, 0, 0) 59.4%,rgb(18, 71, 84) 100%);
+    background-image: -ms-radial-gradient(left top, ellipse farthest-corner,rgb(35, 70, 84) 1.9%,rgb(0, 0, 0) 59.4%,rgb(18, 71, 84) 100%);
 }
-
-body {
-    font-family: 'Inconsolata', monospace;
-}
-
+ 
 @media \0screen\,screen\9 {
-    html {
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cf002c2c", endColorstr="#d6072626", GradientType=0);
+    html{
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff234654",endColorstr="#ff124754",GradientType=0);
     }
 }
 
+body {
+    
+    font-family: 'Inconsolata', monospace;
+}
+.app {
+ /* min-height:100%; */
+}
 html,
 body,
 #app {
+     
     min-height: 100%;
     padding: 0;
     margin: 0;
@@ -124,11 +129,12 @@ layout Small
 
 /* #app {border: 1px solid green;} */
 
-/* .app {border: 1px solid red;} */
+/* .app {border: 1px solid orange;} */
 
 /*
 .app sm
 -------------------------------------- */
+
 .app {
     width: 80%;
     height: 100%;
@@ -158,19 +164,32 @@ layout Small
     grid-area: a;
 }
 
+
 #Channels,
 #News,
 #Article {
-    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 8px;
+    margin: 0;
+    height: auto;
     min-height: 200px;
+    max-height: 33vh;
+     filter: drop-shadow(0 0 10px rgb(1, 140, 145));
 }
 
 /*
 #Header sm
 -------------------------------------- */
 #Header {
+    height:auto;
+ 
 
-    font-family: 'Share Tech Mono', monospace;
+
+     height: 20vh;
+        min-height: 100px;
+    /* font-family: 'Share Tech Mono', monospace; */
+    font-family: 'Space Mono', monospace;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,29 +202,15 @@ layout Small
 -------------------------------------- */
 #Channels {
     font-family: 'Space Mono', monospace;
-    height: 30vh;
-    min-height: 200px;
-    max-height: 33vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    padding: 8px;
-    margin: 0;
     background: rgba(0, 0, 0, 0.137);
-    filter: drop-shadow(0 0 10px rgb(1, 140, 145));
+   
 }
 
 /*
 #News sm
 -------------------------------------- */
 #News {
-        font-family: 'Space Mono', monospace;
-    height: 30vh;
-    min-height: 200px;
-    max-height: 33vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    padding: 8px;
-    margin: 0;
+    font-family: 'Space Mono', monospace;
     background: rgba(0, 0, 0, 0.137);
     filter: drop-shadow(0 0 3px rgb(1, 140, 145));
 }
@@ -214,20 +219,14 @@ layout Small
 #Article sm
 -------------------------------------- */
 #Article {
-    font-family: 'Inconsolata', monospace;
-    height: 300px;
-    min-height: 200px;
-    max-height: 33vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    max-height: 33vh;
-    padding: 8px;
-    margin: 0;
+  font-family: 'Raleway', sans-serif;
     background: rgba(0, 0, 0, 0.137);
-    filter: drop-shadow(0 0 3px rgb(1, 140, 145));
+
 }
 
 #Article>* {
+    line-height: 1.2;
+    letter-spacing: 1px;
     margin: 12px 0;
 }
 
@@ -236,17 +235,22 @@ layout Large
 -------------------------------------------------------- */
 @media screen and (min-width: 768px) {
     #Header {
-        height: 20vh;
-        min-height: 100px;
+        /* height: 20vh; */
+        /* min-height: 100px; */
         grid-column: 1 / -1;
         flex-direction: row;
         justify-content: space-between;
     }
 
     #Channels,
-    #News,
     #Article {
-        height: 80vh;
+       height: auto;
+    max-height: 60vh;
+    }
+
+     #News {
+       height: auto;
+    max-height: 78vh;
     }
 }
 
@@ -265,19 +269,20 @@ layout Large
     }
 
     #Channels {
-        min-height: 500px;
-        max-height: 50vh;
+        /* min-height: 500px; */
+         height: auto;
+        /* max-height: 50vh; */
     }
 
     #News {
-        min-height: 500px;
-        max-height: 100%;
+        /* min-height: 500px; */
+        /* max-height: 100%; */
     }
 
     #Article {
         /* min-height: 500px; */
         height: auto;
-        max-height: 50vh;
+        /* max-height: 50vh; */
     }
 }
 
@@ -300,17 +305,16 @@ styles
     text-align: center;
     margin: 0;
     padding: 0;
-    letter-spacing: 5px;
-    font-size: 1.6em;
+    /* letter-spacing: 2px; */
+    font-size: 2em;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 #Header p {
-    line-height: 1.6;
     text-indent: 10px;
     border-top: 1px solid#fff;
     text-shadow: 1px 1px rgb(0, 0, 0);
-    letter-spacing: 9px;
+    letter-spacing: 8px;
     font-size: 0.8em;
 }
 
@@ -333,15 +337,13 @@ styles
 
 @media screen and (min-width: 768px) {
     #Header h1 {
-        letter-spacing: 5px;
         font-size: 2.6em;
     }
 
     #Header p {
-        line-height: 2;
-        letter-spacing: 14px;
+        letter-spacing: 12px;
         font-size: 1em;
-        text-indent: 20px;
+        text-indent: 10px;
     }
 }
 
