@@ -269,8 +269,7 @@ body {
   background-image: -ms-repeating-radial-gradient(left bottom, ellipse farthest-corner, rgb(7, 48, 54) 0%, rgb(0, 35, 45) 100%);
 }
 
-@media \0screen\,
-screen\9 {
+@media \0screen\,screen\9 {
   body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff073036", endColorstr="#ff00232d", GradientType=0);
   }
