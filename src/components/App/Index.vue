@@ -64,6 +64,11 @@ export default {
         },
 
         handleSelectFeed(feed) {
+
+            // this.selectedFeed = data[0] 
+            // this.articles = this.selectedFeed.items 
+            // this.selectedArticle = this.articles[0] 
+
             this.selectedFeed = feed
             this.articles = feed.items
             this.selectedArticle = null
@@ -111,7 +116,6 @@ body,
 }
 
 
-
 /*---------------------------------------------------------
 layout Small
 -------------------------------------------------------- */
@@ -127,7 +131,8 @@ layout Small
 -------------------------------------- */
 
 .app {
-    width: 80%;
+    max-width: 100%;
+    width: 95%;
     height: 100%;
     margin: auto;
     display: grid;
@@ -155,7 +160,6 @@ layout Small
     grid-area: a;
 }
 
-
 #Channels,
 #Article {
     overflow: hidden;
@@ -172,7 +176,7 @@ layout Small
     overflow: hidden;
     overflow-y: scroll;
     padding: 8px;
-    margin: 0;
+   
     height: auto;
     min-height: 200px;
     max-height: 63vh;
@@ -231,8 +235,11 @@ layout Small
 layout Large
 -------------------------------------------------------- */
 @media screen and (min-width: 768px) {
+.app {
+    width: 80%;
+}
+
     #Header {
-        grid-column: 1 / -1;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -301,17 +308,13 @@ styles
     text-align: center;
     margin: 0;
     padding: 0;
-    /* letter-spacing: 2px; */
-    font-size: 2em;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 #Header p {
-    text-indent: 10px;
     border-top: 1px solid#fff;
     text-shadow: 1px 1px rgb(0, 0, 0);
-    letter-spacing: 8px;
-    font-size: 0.8em;
+    letter-spacing: 7px;
 }
 
 #Header .icons {

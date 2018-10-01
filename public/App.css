@@ -13,7 +13,7 @@
 
 html {
   font-family: sans-serif;
-  line-height: 1.15;
+  /* line-height: 1.15; */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
@@ -35,7 +35,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left;
+  /* text-align: left; */
   background-color: #fff;
 }
 
@@ -342,25 +342,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 
 
 *::-webkit-scrollbar {
