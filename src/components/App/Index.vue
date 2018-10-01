@@ -78,55 +78,36 @@ export default {
 
 <style>
 
-html {
-  
-   font-family: 'Inconsolata', monospace;
+body {
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+     color: #FFF;
+     font-weight: 100;
     display: block;
     overflow: hidden;
     overflow-y: scroll;
-
-
     background-color: #042a32;
-    /* IE9, iOS 3.2+ */
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzA3MzAzNiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDAyMzJkIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-    /* Android 2.3- hack (needed for the actual radial gradient) */
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzA3MzAzNiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDAyMzJkIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-    /* Android 2.3 */
-    background-image: -webkit-repeating-radial-gradient(left bottom, ellipse farthest-corner,rgb(7, 48, 54) 0%,rgb(0, 35, 45) 100%);
-    /* IE10+ */
-    background-image: repeating-radial-gradient(ellipse farthest-corner at left bottom,rgb(7, 48, 54) 0%,rgb(0, 35, 45) 100%);
-    background-image: -ms-repeating-radial-gradient(left bottom, ellipse farthest-corner,rgb(7, 48, 54) 0%,rgb(0, 35, 45) 100%);
+    background-image: -webkit-repeating-radial-gradient(left bottom, ellipse farthest-corner, rgb(7, 48, 54) 0%, rgb(0, 35, 45) 100%);
+    background-image: repeating-radial-gradient(ellipse farthest-corner at left bottom, rgb(7, 48, 54) 0%, rgb(0, 35, 45) 100%);
+    background-image: -ms-repeating-radial-gradient(left bottom, ellipse farthest-corner, rgb(7, 48, 54) 0%, rgb(0, 35, 45) 100%);
 }
- 
-/* IE8- CSS hack */
+
 @media \0screen\,screen\9 {
-    html {
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff073036",endColorstr="#ff00232d",GradientType=0);
+    body {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff073036", endColorstr="#ff00232d", GradientType=0);
     }
-}
-
-
-
-
-
-
-body {
-    
-    font-family: 'Inconsolata', monospace;
 }
 
 html,
 body,
 #app {
-     
     min-height: 100%;
     padding: 0;
-    margin: 0;
-    color: #FFF;
-    font-family: sans-serif;
-    font-weight: 100;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    margin: 0; 
+   
 }
 
 
@@ -152,10 +133,10 @@ layout Small
     display: grid;
     grid-gap: 24px;
     grid-template-columns: 1fr;
-    grid-template-areas:'h'
-                        'c'
-                        'a'
-                        'n';
+    grid-template-areas: 'h'
+        'c'
+        'a'
+        'n';
 }
 
 #Header {
@@ -184,8 +165,9 @@ layout Small
     height: auto;
     min-height: 200px;
     max-height: 33vh;
-     filter: drop-shadow(0 0 10px rgb(1, 140, 145));
+    filter: drop-shadow(0 0 10px rgb(1, 140, 145));
 }
+
 #News {
     overflow: hidden;
     overflow-y: scroll;
@@ -194,19 +176,16 @@ layout Small
     height: auto;
     min-height: 200px;
     max-height: 63vh;
-     filter: drop-shadow(0 0 10px rgb(1, 140, 145));
+    filter: drop-shadow(0 0 10px rgb(1, 140, 145));
 }
+
 /*
 #Header sm
 -------------------------------------- */
 #Header {
-    height:auto;
- 
-
-
-     height: 20vh;
-        min-height: 100px;
-    /* font-family: 'Share Tech Mono', monospace; */
+    height: auto;
+    height: 20vh;
+    min-height: 100px;
     font-family: 'Space Mono', monospace;
     display: flex;
     align-items: center;
@@ -221,7 +200,7 @@ layout Small
 #Channels {
     font-family: 'Space Mono', monospace;
     background: rgba(0, 0, 0, 0.137);
-   
+
 }
 
 /*
@@ -237,7 +216,7 @@ layout Small
 #Article sm
 -------------------------------------- */
 #Article {
-  font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background: rgba(0, 0, 0, 0.137);
 
 }
@@ -260,17 +239,18 @@ layout Large
 
     #Channels,
     #Article {
-       height: auto;
-    max-height: 60vh;
+        height: auto;
+        max-height: 60vh;
     }
 
-     #News {
-       height: auto;
-    max-height: 78vh;
+    #News {
+        height: auto;
+        max-height: 78vh;
     }
 }
 
 @media screen and (min-width: 1028px) {
+
     html,
     body,
     #app {
@@ -285,16 +265,18 @@ layout Large
     }
 
     #Channels {
-         height: auto;
+        min-height: 200px;
+        height: auto;
     }
 
     #News {
-        /* min-height: 500px; */
+
+        min-height: 300px;
         /* max-height: 100%; */
     }
 
     #Article {
-        /* min-height: 500px; */
+        min-height: 200px;
         height: auto;
         /* max-height: 50vh; */
     }

@@ -39,16 +39,14 @@
 
 <script>
 export default {
-
-    
-    data(){
+    data() {
         return {
-            home:'https://www.andrewrico.com/',
-githubUrl:'https://github.com/Andrewrico',
-    twitterUrl:'https://twitter.com/andrewrico86',
+            home: 'https://www.andrewrico.com/',
+            githubUrl: 'https://github.com/Andrewrico',
+            twitterUrl: 'https://twitter.com/andrewrico86',
         }
     }
-    
+
 }
 </script>
 
