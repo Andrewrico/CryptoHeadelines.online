@@ -64,7 +64,7 @@ export default {
         },
 
         handleSelectFeed(feed) {
-
+            
             // this.selectedFeed = data[0] 
             // this.articles = this.selectedFeed.items 
             // this.selectedArticle = this.articles[0] 
@@ -108,7 +108,9 @@ body {
 
 html,
 body,
-#app {
+#app 
+{
+    width: 100%;
     min-height: 100%;
     padding: 0;
     margin: 0; 
@@ -129,10 +131,8 @@ layout Small
 /*
 .app sm
 -------------------------------------- */
-
 .app {
-    max-width: 100%;
-    width: 95%;
+    width: 90%;
     height: 100%;
     margin: auto;
     display: grid;
@@ -234,6 +234,11 @@ layout Small
 /*---------------------------------------------------------
 layout Large
 -------------------------------------------------------- */
+@media screen and (min-width: 468px) {
+.app {
+    width: 85%;
+}
+}
 @media screen and (min-width: 768px) {
 .app {
     width: 80%;
