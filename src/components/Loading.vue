@@ -19,3 +19,13 @@ export default {
 }
 </script>
 
+<style>
+.loading-overlay.is-active {
+  color:red!important;
+  background-image: #000!important;
+  font-size: 2em;
+  z-index: 99999!important;
+}
+</style>
+
+
