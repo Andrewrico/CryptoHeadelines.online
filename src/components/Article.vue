@@ -1,9 +1,8 @@
 <template>
-
   <aside>
     <div v-if="article" id="Article">
 
-      <p :article="article" >{{moment(article.pubDate).format('llll')}}</p>
+      <p :article="article">{{moment(article.pubDate).format('llll')}}</p>
 
       <h2>{{article.title}}</h2>
 
@@ -14,11 +13,10 @@
       </a>
     </div>
   </aside>
-
 </template>
 
 <script>
-import moment from 'moment';
+// import moment from 'moment';
 
 export default {
     name: 'Article',
