@@ -57,6 +57,10 @@ export default {
 
             this.feeds = data
             this.isLoading = false
+
+            this.selectedFeed = data[0]
+this.articles = this.selectedFeed.items
+this.selectedArticle = this.articles[0]
         },
 
         handleSelectFeed(feed) {
@@ -268,7 +272,7 @@ body {
   background-image: repeating-radial-gradient(ellipse farthest-corner at left bottom, rgb(7, 48, 54) 0%, rgb(0, 35, 45) 100%);
   background-image: -ms-repeating-radial-gradient(left bottom, ellipse farthest-corner, rgb(7, 48, 54) 0%, rgb(0, 35, 45) 100%);  */
   /* background-image: url('./assets/tech3.jpg'); */
-  background-attachment:scroll;
+  /* background-attachment:scroll; */
   /* background-position: center center; */
   /* background-repeat: no-repeat; */
 }
