@@ -323,6 +323,12 @@ body {
   color: rgb(165, 253, 253);
   font-size: 1.2em;
 }
+#Header i:hover {
+ color: cyan;
+}
+
+
+
 
 @media screen and (min-width: 768px) {
   #Header h1 {
