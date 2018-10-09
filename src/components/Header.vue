@@ -1,6 +1,5 @@
 <template>
     <div id="Header">
-
         <div class="title">
             <h1>
                 Cryptoheadlines
@@ -30,11 +29,7 @@
             </a>   
 
         </div>
-
-        
-
     </div>
-
 </template>
 
 <script>

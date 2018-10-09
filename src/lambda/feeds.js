@@ -2,7 +2,7 @@ import Parser from 'rss-parser'
 
 const FEEDS = [
 
-  
+  'https://www.bitcoinofamerica.org/blog/feed/',
   'https://www.coindesk.com/feed/',
   'https://www.bitcoin.com/feed/',
   'https://cointelegraph.com/feed',
